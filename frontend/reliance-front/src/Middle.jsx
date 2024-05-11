@@ -15,7 +15,7 @@ const Middle = () => {
              <h2>2.We provide fibre Network</h2>
              <h2>3.We do Wireless Network Installation</h2>
              <h2>4.Free wifi Maintaince</h2>
-             <h2>5.Farm Wifi Expansion</h2>
+             <h2>5.Farm Wifi Extension</h2>
       </div>
         </div>
         

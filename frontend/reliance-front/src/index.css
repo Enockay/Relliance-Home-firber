@@ -62,8 +62,7 @@ button:focus-visible {
 
 .packages{
   padding: 0.8rem;
-  height:25rem;
-  border: 2px solid blue;
+  height:26rem;
 }
 
 .li-packages{
@@ -74,10 +73,10 @@ button:focus-visible {
 .p1{
   border: 1px solid blue;
   height: 17rem;
-  border-radius:3rem;
-  width: 17rem;
+  border-radius:1rem;
+  width: 13rem;
   padding: 2rem;
-  background-color: #83f8bd;
+  background-color:rgb(216, 250, 165);
 }
 
 .Diamond{
@@ -87,5 +86,100 @@ button:focus-visible {
   cursor: pointer;
 }
 .cost{
-  color: coral;
+  color: #303131;
+}
+.package-header{
+  font-size:2rem;
+  color: #535bf2;
+  text-decoration: underline;
+}
+.mbps{
+  color: rgb(75, 75, 75);
+}
+.span{
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  max-height: 2rem;
+  padding: 0.1rem;
+  text-align: center;
+}
+
+.Contact-us{
+  margin-top: 2rem;
+  height:10rem;
+  border: 1px solid blue;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: #09f881;
+}
+.call-items{
+  display: flex;
+  gap: 2rem;
+}
+.cont-head{
+  color: rgb(207, 150, 230);
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  min-width: 20rem;
+  min-height: auto;
+  background-color:white;
+  border-radius: 0.9rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 0.9rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+
+.input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.book-now {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.book-now:hover {
+  background-color: #0056b3;
+}
+                
+
+.button{
+  max-width: 5rem;
+}
+
+.button-list{
+  display: flex;
+  gap: 1rem;
 }
