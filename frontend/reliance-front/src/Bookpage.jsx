@@ -1,6 +1,6 @@
 import "./index.css";
 import React from 'react';
-import { carryProp } from "./Packages";
+import { getCarryProp} from "./Packages";
 
 const BookPage = ({ onBackClick }) => {
     
@@ -8,6 +8,7 @@ const BookPage = ({ onBackClick }) => {
     e.preventDefault();
     // Handle form submission
   };
+const packageName = getCarryProp();
 
   return (
     <div className="modal">
@@ -27,12 +28,12 @@ const BookPage = ({ onBackClick }) => {
 
         <div className="item">
           <label className="Label">Package:</label>
-          <input type="text" className="input" placeholder={carryProp.name} required />
+          <input type="text" className="input" placeholder={packageName.name} required />
         </div>
 
         <div className="item">
           <label className="label">Amount:</label>
-          <input type="text" className="input" placeholder={`Cost: ${carryProp.cost}`} required />
+          <input type="text" className="input" placeholder={`Cost: ${packageName.cost}`} required />
         </div>
 
         <div className="item">
