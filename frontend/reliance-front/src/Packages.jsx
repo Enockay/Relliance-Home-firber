@@ -47,7 +47,6 @@ const packages = [
           </div>
         ))}
       </div>
-      {selectedPackage && <BookPage {...bookPageProps} packageDetails={selectedPackage} />}
     </div>
   );
 };

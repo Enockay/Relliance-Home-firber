@@ -6,6 +6,7 @@ import Middle from './Middle';
 import Packages from './Packages';
 import Contact from './Contact-us';
 import BookPage from './Bookpage';
+import Footer from './Footer';
 
 function App() {
   const [showPackages, setShowPackages] = useState(true);
@@ -31,6 +32,7 @@ function App() {
         {showBookPage && <BookPage onBackClick={handleBackToPackagesClick} />}
       </div>
     <Contact/>
+    <Footer/>
     </>
   )
 }
