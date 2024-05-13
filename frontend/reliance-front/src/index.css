@@ -35,25 +35,17 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+
 .middle{
   border: 1px solid greenyellow;
-  height: 25m;
   color: white;
   background-color:lightslategray;
+  max-height:25rem;
 }
 .services{
     text-decoration: underline;
+    font-style: italic;
+    font-size: 1.5rem;
 }
 .items{
   display: flex;
@@ -71,16 +63,17 @@ button:focus-visible {
 }
 
 .p1{
-  border: 1px solid blue;
+ 
   height: 17rem;
   border-radius:1rem;
   width: 13rem;
   padding: 2rem;
-  background-color:rgb(216, 250, 165);
+  color: #ffffff;
+  background-color:rgb(133, 9, 248);
 }
 
 .Diamond{
-  color: darkolivegreen;
+  color: rgb(16, 233, 197);
 }
 .subscribe{
   cursor: pointer;
@@ -120,22 +113,41 @@ button:focus-visible {
   color: rgb(207, 150, 230);
   cursor: pointer;
 }
-
+.service-item{
+  display:flex;
+  height: 50%;
+  padding: 1rem;
+}
+img{
+  border-radius: 10px;
+}
+.service-1{
+  width: 50%;
+  height: auto;
+}
+.service-2{
+  width: 50%;
+  height: auto;
+  padding-left:10%
+}
 .modal {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 2rem;
+  border: 2px solid blue;
 }
 
 .modal-content {
-  min-width: 100%;
+  min-width: 50%;
   min-height: auto;
-  background-color:white;
+  color: white;
+  background-color:rgb(95, 104, 145);
   border-radius: 0.9rem;
+  border: 2px solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 0.9rem;
+  padding: 1.2rem;
+  border-right: none;
 }
 
 .form {
@@ -145,6 +157,8 @@ button:focus-visible {
 }
 
 .item {
+  display: flex;
+  gap:2rem;
   margin-bottom: 10px;
 }
 
@@ -156,6 +170,7 @@ button:focus-visible {
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  color: #ffffff;
 }
 
 .book-now {
@@ -170,11 +185,74 @@ button:focus-visible {
 .book-now:hover {
   background-color: #0056b3;
 }
-                
-
-
+ .input{
+  border-radius: 0.3rem;
+  box-shadow: #303131;
+  width:30%;
+ }               
 
 .button-list{
   display: flex;
-  gap: 1rem;
+  gap: 10%;
 }
+
+.form-advert{
+  width: 50%;
+  height: auto;
+  border: 2px solid rgb(7, 7, 7);
+  border-radius: 0.9rem;
+  padding:0.2rem;
+  border-left: none;
+  background-color:rgb(95, 104, 145);
+}
+
+.Get-fibre{
+  font-size: 1.4rem;
+  color: #c8adfc;
+}
+.book-button{
+  background-color:green;
+  color: white;
+  max-width: auto;
+}
+
+.cancel-button{
+  background-color:red;
+  color: white;
+  max-width: auto;
+}
+
+.form{
+  border: 1px solid black;
+}
+
+.welcome-words{
+  font-weight: 500;
+}
+@media (max-width:760px) {
+  :root {
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+  .p1{
+    max-height: 30%;
+    max-width: 50%;
+    padding: 0.9rem;
+  }
+  .li-packages{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .package-header{
+    font-size: 1rem;
+    margin-left: -40%;
+  }
+}
+

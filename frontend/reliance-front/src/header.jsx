@@ -17,13 +17,13 @@ const Header = () => {
                  </div>
                 */ } 
                 <div className="icons">
-                    <span className="span">Reliance Home</span>
-                    <span className="span">Who Are We</span>
-                    <span className="span" >Services</span>
-                    <span className="span" >Our-packages</span>
-                    <span className="span" >Coverage</span>
-                    <span className="span" >Contact-Us</span>
-                    <span className="span" >News</span>
+                    <span className="span"> Home</span>
+                    <span className="span"id="hidden-icons">Who Are We</span>
+                    <span className="span" id="hidden-icons">Services</span>
+                    <span className="span" >packages</span>
+                    <span className="span"  >Coverage</span>
+                    <span className="span" id="hidden-icons">Contact-Us</span>
+                    <span className="span" id="hidden-icons" >News</span>
                 </div>
             </div>
         </div>

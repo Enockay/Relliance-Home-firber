@@ -53,3 +53,44 @@
   color: #243724;
 }
 
+.advert{
+  width: 50%;
+}
+.image{
+  width: 50%;
+}
+@media (max-width:760px) {
+ .header-items{
+  gap:2%;
+ }
+  .h2{
+    font-size: 1rem;
+  }
+.icons{
+  gap: 5%;
+}
+  .header{
+    height:5%;
+  }
+
+  #hidden-icons{
+    display: none;
+  }
+  .h1{
+    font-size:1.5rem;
+  }
+  .body{
+    height: 20%;
+  }
+  .p1{
+    height: 20%;
+    width:40% ;
+  }
+  .head-line{
+    width: 40%;
+  }
+  .h2-p{
+    display: none;
+  }
+}
+
