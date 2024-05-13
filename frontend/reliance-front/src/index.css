@@ -55,7 +55,6 @@ button:focus-visible {
 .packages{
   padding: 0.8rem;
   height:26rem;
-  border: 1px solid black;
 }
 
 .service-item{
@@ -89,7 +88,7 @@ button:focus-visible {
   border-radius: 0.5rem;
 }
 .cost{
-  color: #303131;
+  color: #f1e20c;
 }
 .package-header{
   font-size:2rem;
@@ -97,7 +96,7 @@ button:focus-visible {
   text-decoration: underline;
 }
 .mbps{
-  color: rgb(75, 75, 75);
+  color: rgb(1, 236, 158);
 }
 .span{
   border-radius: 0.5rem;
@@ -115,10 +114,9 @@ button:focus-visible {
 .Contact-us{
   margin-top: 2rem;
   height:fit-content;
-  border: 1px solid blue;
   border-radius: 1rem;
   padding: 0.5rem;
-  background-color: #09f881;
+  background-color: #b8ebd1;
 }
 .call-items{
   display: flex;
@@ -145,7 +143,7 @@ img{
   padding: 2rem;
   border: 2px solid blue;
 }
-.service-item
+
 .modal-content {
   min-width: 50%;
   min-height: auto;
@@ -161,7 +159,6 @@ img{
 .form {
   display: flex;
   flex-direction: column;
-  
 }
 
 .item {
@@ -262,7 +259,6 @@ img{
     justify-content: center;
     align-items: center;
     gap: 0.9rem;
-    border: 1px solid blue;
   }
   .package-header{
     font-size: 1rem;
@@ -281,7 +277,12 @@ img{
     height: fit-content;
   }
   .call-items{
-    gap:1rem;
+    gap:0.2rem;
   }
+  .c-icons{
+     width: 10%;
+  }
+  
 }
+
 
