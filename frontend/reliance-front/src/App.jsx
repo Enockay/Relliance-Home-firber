@@ -5,9 +5,21 @@ import Body from './body';
 import Middle from './Middle';
 import Packages from './Packages';
 import Contact from './Contact-us';
+import BookPage from './Bookpage';
 
 function App() {
-const [ showBookNow , setShowBookNow ] = useState(false)
+  const [showPackages, setShowPackages] = useState(true);
+  const [showBookPage, setShowBookPage] = useState(false);
+
+  const handleSubscribeClick = () => {
+    setShowPackages(false);
+    setShowBookPage(true);
+  };
+
+  const handleBackToPackagesClick = () => {
+    setShowPackages(true);
+    setShowBookPage(false);
+  };
 
   return (
     <>
@@ -15,9 +27,9 @@ const [ showBookNow , setShowBookNow ] = useState(false)
     <Body/>
     <Middle/>
     <div className='body-Main'>
-     <Packages/>
-    </div>
-    
+        {showPackages && <Packages onSubscribeClick={handleSubscribeClick} />}
+        {showBookPage && <BookPage onBackClick={handleBackToPackagesClick} />}
+      </div>
     <Contact/>
     </>
   )

@@ -122,9 +122,6 @@ button:focus-visible {
 }
 
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -133,7 +130,7 @@ button:focus-visible {
 }
 
 .modal-content {
-  min-width: 20rem;
+  min-width: 100%;
   min-height: auto;
   background-color:white;
   border-radius: 0.9rem;
@@ -175,9 +172,7 @@ button:focus-visible {
 }
                 
 
-.button{
-  max-width: 5rem;
-}
+
 
 .button-list{
   display: flex;
