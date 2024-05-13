@@ -4,7 +4,7 @@ const Footer = () => {
     return(
         <>
         <div className="footer">
-            <center><p> Blackie-networks &copy;2024 @ All Rights Reserved @enockaymwema@gmail.com/0796869402</p></center>
+            <center><p> <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWtMmVNSlrNvwFZsxGBDxxrXDpQdXcjZJMRcJNjFgrFLPStGSHrKKFgmxwNlDjQtHmgqzRkRG">Blackie-networks</a> &copy;2024 All Rights Reserved</p></center>
         </div>
         </>
     )
