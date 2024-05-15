@@ -27,26 +27,29 @@ button {
   font-family: inherit;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-
 .middle{
   border: 1px solid greenyellow;
   color: white;
-  background-color:rgb(62, 83, 107);
+  background-color: #34495E;
   height:25rem;
 }
+
 .services{
     text-decoration: underline;
     font-style: italic;
     font-size: 1.2rem;
 }
+
 .items{
   display: flex;
   gap: 4rem;
@@ -68,7 +71,6 @@ button:focus-visible {
 }
 
 .p1{
- 
   height: 17rem;
   border-radius:1rem;
   width: 13rem;
@@ -80,6 +82,7 @@ button:focus-visible {
 .Diamond{
   color: goldenrod;
 }
+
 .subscribe{
   cursor: pointer;
   background-color: green;
@@ -87,25 +90,27 @@ button:focus-visible {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
+
 .cost{
   color: #f1e20c;
 }
+
 .package-header{
   font-size:2rem;
   color: #535bf2;
   text-decoration: underline;
 }
+
 .mbps{
   color: rgb(1, 236, 158);
 }
+
 .span{
   border-radius: 0.5rem;
   max-height: 2rem;
   padding: 0.1rem;
   text-align: center;
 }
-/*for topping image in the middle*/
-
 
 .service-p{
   font-weight: 600;
@@ -118,10 +123,12 @@ button:focus-visible {
   padding: 0.5rem;
   background-color: #b8ebd1;
 }
+
 .call-items{
   display: flex;
   gap: 2rem;
 }
+
 .cont-head{
   color: rgb(207, 150, 230);
   cursor: pointer;
@@ -136,6 +143,7 @@ img{
   height: auto;
   padding:1rem;
 }
+
 .modal {
   width: auto;
   height: auto;
@@ -190,6 +198,7 @@ img{
 .book-now:hover {
   background-color: #0056b3;
 }
+
  .input{
   border-radius: 0.3rem;
   box-shadow: #303131;
@@ -216,6 +225,7 @@ img{
   font-size: 1.4rem;
   color: #c8adfc;
 }
+
 .book-button{
   background-color:green;
   color: white;
@@ -235,6 +245,7 @@ img{
 .welcome-words{
   font-weight: 500;
 }
+
 @media (max-width:760px) {
   :root {
     background-color: #ffffff;
@@ -282,7 +293,7 @@ img{
   .c-icons{
      width: 15%;
   }
-  
+  #visit{
+    display: none;
+  }
 }
-
-

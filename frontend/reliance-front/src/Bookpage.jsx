@@ -57,7 +57,7 @@ const BookPage = ({ onBackClick }) => {
         <h4>Enter your details below to be part of Reliance Home</h4>
 
         <div className="item">
-          <label className="label">Full Names:</label>
+          <label className="label">Name:</label>
           <input type="text" className="input" placeholder="Enter your full Names" required />
         </div>
 
@@ -81,10 +81,17 @@ const BookPage = ({ onBackClick }) => {
           <input type="Number" className="input" required placeholder="Your Contact Details" />
         </div>
 
+        <div className="item">
+          <label className="label">Email:</label>
+          <input type="email" className="input" required placeholder="enter your correct email" />
+        </div>
+        
         <div className="button-list">
           <button className="book-button">Book Now</button>
           <button className="cancel-button" onClick={onBackClick}>Cancel Booking</button>
         </div>
+
+        
       </form>
 
       <div className="form-advert" style={{ position: 'relative' }}>

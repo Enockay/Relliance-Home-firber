@@ -9,7 +9,7 @@ const Middle = () => {
       <div className="service-item">
           <img src={image} width="60%" height="100%" ></img>
         <div className="service-2">
-            <p className="service-p">1. We do Wifi installation</p>
+            <p className="service-p">1. Internet Service Provider Services</p>
             <p className="service-p">2. We provide fibre Network</p>
             <p className="service-p">3. We do Wireless Network Installation</p>
             <p className="service-p">4. Free wifi Maintenance</p>
