@@ -1,0 +1,13 @@
+POST http://localhost:3000/BookItems
+Content-Type: application/json
+
+{
+    "Name" : "enock Mumo Mwema",
+    "location" :"Naivas",
+    "amount" : "5999",
+    "package" :"15Mbps",
+    "contact" : "0707224529",
+     "email" : "enockaymwema@gmail.com",
+     "Date" : "16/05/2024",
+     "Time" : "14:40:40"
+}

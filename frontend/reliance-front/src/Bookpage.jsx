@@ -6,6 +6,12 @@ import React, { useState, useEffect } from 'react';
 const BookPage = ({ onBackClick }) => {
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
+  const [Name, setName] = useState('');
+  const [location, setLocation] = useState('');
+  const [contact, setContact] = useState('');
+  const [email, setEmail] = useState('');
+  const [loading, setLoading] = useState(false);
+
   const words = ["WELCOME TO RELIANCE HOME FIBRE", "WE THE BEST IN TOWN", "WE WILL GET TO YOU IN THE NEXT 2-3 HOURS AFTER YOU CLICK BOOK NOW", "WE APPRECIATE YOUR INTEREST IN US"];
   const colors = ['white', '#00ff00', '#0000ff', '#ffff00']; // Array of colors for text
 
@@ -44,8 +50,47 @@ const BookPage = ({ onBackClick }) => {
     }, 50); // Deleting speed
   };
 
-  const handleSubmit = () => {
-    alert("package booked successfully");
+  const now = new Date();
+  const formattedDate = now.toLocaleDateString();
+  const formattedTime = now.toLocaleTimeString();
+
+  const BookingInfo = {
+    Name: Name,
+    location: location,
+    amount: packageName.cost,
+    package: packageName.name,
+    contact: contact,
+    email: email,
+    Date: formattedDate,
+    Time: formattedTime
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const url = "https://reliance.fly.dev/BookItems";
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(BookingInfo)
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log(`response from backend ${data.message}`);
+        alert(`${data.message}`);
+      } else {
+        alert("Booking failed, try booking again or directly contact us");
+      }
+    } catch (error) {
+      alert(`Error occurred while submitting your details: ${error}`);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -58,12 +103,12 @@ const BookPage = ({ onBackClick }) => {
 
         <div className="item">
           <label className="label">Name:</label>
-          <input type="text" className="input" placeholder="Enter your full Names" required />
+          <input type="text" className="input" value={Name} onChange={(e) => setName(e.target.value)} placeholder="Enter your full Names" required />
         </div>
 
         <div className="item">
           <label className="label">Location:</label>
-          <input type="text" className="input" placeholder="Enter Your Location" required />
+          <input type="text" className="input" value={location} placeholder="Enter Your Location" onChange={(e) => setLocation(e.target.value)} required />
         </div>
 
         <div className="item">
@@ -78,20 +123,21 @@ const BookPage = ({ onBackClick }) => {
 
         <div className="item">
           <label className="label">Contact:</label>
-          <input type="Number" className="input" required placeholder="Your Contact Details" />
+          <input type="Number" className="input" value={contact} onChange={(e) => setContact(e.target.value)} required placeholder="Your Contact Details" />
         </div>
 
         <div className="item">
           <label className="label">Email:</label>
-          <input type="email" className="input" required placeholder="enter your correct email" />
-        </div>
-        
-        <div className="button-list">
-          <button className="book-button">Book Now</button>
-          <button className="cancel-button" onClick={onBackClick}>Cancel Booking</button>
+          <input type="email" className="input" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="enter your correct email" />
         </div>
 
-        
+        <div className="button-list">
+          <button type="submit" className="book-button" disabled={loading}>
+            {loading ? "Booking..." : "Book Now"}
+          </button>
+          <button type="button" className="cancel-button" onClick={onBackClick} disabled={loading}>Cancel Booking</button>
+        </div>
+        {loading && <div className="spinner"></div>}
       </form>
 
       <div className="form-advert" style={{ position: 'relative' }}>
